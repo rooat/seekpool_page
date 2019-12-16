@@ -27,13 +27,32 @@ pub fn view(model: &Model) -> impl View<Msg> {
                 },
 
                 p![
-                   format!("Miner : 0xdgdgdgdg")
+                    b![
+                        "Miner : "
+                    ],
+                    a![
+                        style!{
+                            St::Color => "#4c7cea"
+                        },
+                        attrs![
+                            At::Href => format!("{}/#/eaaddress?address={}",model.config.url.explorer,"0xe07a8a8153D1C159dfbaC0fEfE9812C7B5583B8d"),
+                            At::Target => "_blank"
+                        ],
+                        "0xe07a8a8153D1C159dfbaC0fEfE9812C7B5583B8d"
+                    ]
+
                 ],
                 p![
-                   format!("Author : 0xdgdgdgdg")
+                    b![
+                        "Author : "
+                    ],
+                    "0xe07a8a8153D1C159dfbaC0fEfE9812C7B5583B8d"
                 ],
                 p![
-                   format!("Pid : 123232344")
+                    b![
+                        "PID : "
+                    ],
+                    "2332434345"
                 ],
 
                 div![
@@ -42,13 +61,22 @@ pub fn view(model: &Model) -> impl View<Msg> {
                     ],
                     div![
                         p![
-                            format!("Level : 9")
+                            b![
+                                "Level : "
+                            ],
+                            "9"
                         ],
                         p![
-                            format!("Rate : 12%")
+                            b![
+                                "Rate : "
+                            ],
+                            "12%"
                         ],
                         p![
-                            format!("BurntCoin : 1222222")
+                            b![
+                                "BurntCoin : "
+                            ],
+                            "232323"
                         ],
 
                     ],
@@ -57,18 +85,30 @@ pub fn view(model: &Model) -> impl View<Msg> {
                             St::MarginLeft => "20%"
                         },
                         p![
-                           format!("BlockCount : 0xdgdgdgdg")
+                            b![
+                                "BlockCount : "
+                            ],
+                            "1233"
                         ],
                         p![
-                           format!("TotalBenefit : 12222")
+                            b![
+                                "TotalBenefit : "
+                            ],
+                            "1233244"
                         ],
                         p![
-                           format!("EvBenefit: 33333")
+                            b![
+                                "AverageBenefit : "
+                            ],
+                            "232323"
                         ]
                     ]
                 ],
                 p![
-                    format!("Current ranking : 1")
+                    b![
+                        "Ranking : "
+                    ],
+                    "1"
                 ]
 
             ],

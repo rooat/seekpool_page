@@ -1,7 +1,7 @@
 [package]
 version = "0.1.0"
 name = "seekpool"
-repository = "https://github.com/MartinKavik/kavik.cz"
+repository = "https://github.com/rooat/seekpool_page.git"
 authors = ["Seekchain Seekchain <martin@seekchain>"]
 description = "Seekchain"
 categories = ["wasm", "rust", "tailwindcss", "seed", "personal", "website"]

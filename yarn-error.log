@@ -15,7 +15,7 @@ Platform:
 
 npm manifest: 
   {
-    "author": "Martin Kavík <martin@kavik.cz>",
+    "author": "SeekChainPool <SeekChainPool@SeekChainPool>",
     "name": "seed-quickstart-webpack",
     "version": "0.3.1",
     "repository": "https://github.com/MartinKavik/seed-quickstart-webpack",

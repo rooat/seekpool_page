@@ -129,9 +129,13 @@ pub fn view(model: &Model) -> impl View<Msg> {
                     St::LineHeight => "50px"
                 },
                 dl![
-                    class![
-                        "sm:flex-wrap"
-                    ],
+                    style!{
+                        St::Height => "50%",
+                        St::LineHeight => "70px",
+                        St::Background => "#45e8d5",
+                        St::Color => "#737573",
+                        St::BoxShadow => "-1px 2px 20px 0px rgba(0, 0, 0, 0.25), -1px -4px 5px 0px rgba(0, 0, 0, 0.25)"
+                    },
                     dd![
                         "当前区块高度"
                     ],
@@ -139,6 +143,21 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         "23333"
                     ],
 
+                ],
+                dl![
+                    style!{
+                        St::Height => "50%",
+                        St::LineHeight => "70px",
+                        St::Background => "#dbe6e5",
+                        St::Color => "#737573",
+                        St::BoxShadow => "-1px 2px 20px 0px rgba(0, 0, 0, 0.25), -1px -4px 5px 0px rgba(0, 0, 0, 0.25)"
+                    },
+                    dd![
+                        "Elapsed"
+                    ],
+                    p![
+                        "12:02:02"
+                    ]
                 ]
             ],
             div![
@@ -158,11 +177,15 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         class![
                             C.sm__flex,
                         ],
-                        img![
-
-                            attrs![
-                                At::Src => image_src("icon_1.png")
-                            ]
+                        i![
+                            class![
+                                "icon ion-navicon-round",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
                         ],
                         dl![
                             &dl_margin_left,
@@ -171,18 +194,24 @@ pub fn view(model: &Model) -> impl View<Msg> {
                             ],
                             p![
                                 "233.33PB"
-                            ]
-                        ]
+                            ],
+                        ],
+
                     ],
                     div![
                         &table_width_box,
                         class![
                             C.sm__flex,
                         ],
-                        img![
-                            attrs![
-                                At::Src => image_src("icon_2.png")
-                            ]
+                        i![
+                            class![
+                                "icon ion-card",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
                         ],
                         dl![
                             &dl_margin_left,
@@ -199,15 +228,45 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         class![
                             C.sm__flex,
                         ],
-                        img![
-                            attrs![
-                                At::Src => image_src("icon_3.png")
-                            ]
+                        i![
+                            class![
+                                "icon ion-pricetags",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
                         ],
                         dl![
                             &dl_margin_left,
                             dd![
                                 "上个挖到的区块"
+                            ],
+                            p![
+                                "23333"
+                            ]
+                        ]
+                    ],
+                    div![
+                        &table_width_box,
+                        class![
+                            C.sm__flex,
+                        ],
+                        i![
+                            class![
+                                "icon ion-ios-barcode",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
+                        ],
+                        dl![
+                            &dl_margin_left,
+                            dd![
+                                "Best Deadline"
                             ],
                             p![
                                 "23333"
@@ -225,10 +284,15 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         class![
                             C.sm__flex,
                         ],
-                        img![
-                            attrs![
-                                At::Src => image_src("icon_4.png")
-                            ]
+                        i![
+                            class![
+                                "icon ion-cube",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
                         ],
                         dl![
                             &dl_margin_left,
@@ -245,10 +309,15 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         class![
                             C.sm__flex,
                         ],
-                        img![
-                            attrs![
-                                At::Src => image_src("icon_5.png")
-                            ]
+                        i![
+                            class![
+                                "icon ion-ios-settings",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
                         ],
                         dl![
                             &dl_margin_left,
@@ -265,10 +334,15 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         class![
                             C.sm__flex,
                         ],
-                        img![
-                            attrs![
-                                At::Src => image_src("icon_6.png")
-                            ]
+                        i![
+                            class![
+                                "icon ion-ios-calendar",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
                         ],
                         dl![
                             &dl_margin_left,
@@ -280,8 +354,33 @@ pub fn view(model: &Model) -> impl View<Msg> {
                             ]
                         ]
                     ],
+                    div![
+                        &table_width_box,
+                        class![
+                            C.sm__flex,
+                        ],
+                        i![
+                            class![
+                                "icon ion-ios-grid-view",
+                                C.sm__text_32,
+                                C.md__text_32
+                            ],
+                            style!{
+                                St::Color => "#56ccbe"
+                            }
+                        ],
+                        dl![
+                            &dl_margin_left,
+                            dd![
+                                "Best Target"
+                            ],
+                            p![
+                                "23388"
+                            ]
+                        ]
+                    ],
                 ],
-            ]
+            ],
         ],
         div![
             style!{

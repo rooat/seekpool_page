@@ -26,6 +26,7 @@ pub fn view(model: &Model) -> impl View<Msg> {
                 St::Background => "#eeefee"
             };
         }
+
         let miner_add = &miner.miner[0..9];
         let listV = div![
             tr_style,
@@ -42,7 +43,18 @@ pub fn view(model: &Model) -> impl View<Msg> {
                     C.table_cell,
                     C.md__leading_loose
                 ],
-                miner_add
+
+                a![
+                    style!{
+                        St::Color => "#4c7cea"
+                    },
+                    attrs![
+                        At::Href => format!("{}/#/eaaddress?address={}",model.config.url.explorer,&miner.miner),
+                        At::Target => "_blank"
+                    ],
+                    miner_add
+                ]
+
             ],
             div![
                 class![
@@ -276,35 +288,39 @@ pub fn view(model: &Model) -> impl View<Msg> {
                                 C.table_row
                                 C.text_center
                             ],
+                            style!{
+                                St::FontSize => "18px",
+                                St::FontWeight => "600"
+                            },
                             div![
                                 class![
                                     C.table_cell
                                 ],
-                                "miner"
+                                "Miner"
                             ],
                             div![
                                 class![
                                     C.table_cell
                                 ],
-                                "miner"
+                                "Pending"
                             ],
                             div![
                                 class![
                                     C.table_cell
                                 ],
-                                "miner"
+                                "Historical Share"
                             ],
                             div![
                                 class![
                                     C.table_cell
                                 ],
-                                "miner"
+                                "Effective Capacity"
                             ],
                             div![
                                 class![
                                     C.table_cell
                                 ],
-                                "miner"
+                                "Confirmed Deadlines"
                             ],
                             div![
                                 class![
