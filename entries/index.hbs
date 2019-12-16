@@ -1,0 +1,125 @@
+{{! http://handlebarsjs.com }}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    {{> social_media}}
+    {{> favicons}}
+    {{> head_scripts}}
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="/static/chart.js"></script>
+  </head>
+  <style type="text/css">
+    .tips{
+          position: fixed;
+      z-index: 20;
+      width: 30%;
+      height: 150px;
+      text-align: center;
+      font-size: 25px;
+      padding: 10px;
+      background: #f5f4f4;
+      top: 200px;
+      left: 35%;
+      border-radius: 7px;
+      border: 1px solid #ccc5c5;
+      display: none;
+    }
+    .tips_btn{
+          background: #f9e8df;
+          width: 27%;
+          margin-top: 40px;
+    }
+    .ceng{
+          width: 100%;
+        height: 100%;
+        background: #1f1e1e;
+        z-index: 15;
+        position: absolute;
+        top: 0;
+        opacity: 0.5;
+        display: none;
+    }
+    #backButton {
+      border-radius: 4px;
+      padding: 8px;
+      border: none;
+      font-size: 16px;
+      background-color: #2eacd1;
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+    .invisible {
+      display: none;
+    }
+  </style>
+  <body class="fade-in font-body text-18 bg-gray-1 overflow-x-hidden w-screen relative sm:text-26 lg:text-45">
+    
+    <section id="app" class="overflow-x-hidden w-screen relative">
+      {{> loading_page}}
+    </section>
+    <div class ="tips">
+      <p class="tips_content"></p>
+      <button onclick="close_tips()" class="tips_btn">Close</button>
+    </div>
+    <div class="ceng"></div>
+  </body>
+  <script type="text/javascript">
+    window.onload = function(){
+      setTimeout(()=>{
+          minerChart()
+      },1000) 
+    }
+    function home(){
+      console.log("home")  
+      clear_chart()  
+      setTimeout(()=>{
+          minerChart()
+      },100)  
+    }
+    function miner(){
+      setTimeout(()=>{
+          miner_pie() 
+      },100)
+    }
+    function payment(){
+      console.log("payment") 
+      clear_chart()  
+    }
+    function support(){
+      console.log("support") 
+      clear_chart() 
+    }
+
+    
+    //miner 饼状图
+    
+    function miner_one(){
+      clear_chart();
+      setTimeout(()=>{
+          minerOneBenefitChartCost()
+          minerOneBenefitChart()
+      },100)
+      
+    }
+    function invalid_input(){
+      $(".ceng").css("display","block")
+      let inputs = $("#inputaddress").val()
+      if(!inputs || inputs.length!=42 || inputs.indexOf("0x")==-1){
+        $(".tips_content").text("Invalid address");
+        $(".tips").css("display","block")
+      }
+    }
+    function close_tips(){
+      $(".ceng").css("display","none");
+      $(".tips").css("display","none")
+    }
+</script>
+</html>

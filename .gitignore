@@ -1,0 +1,11 @@
+dist
+node_modules
+seekpool/bin
+seekpool/pkg
+seekpool/target
+seekpool/wasm-pack.log
+.idea
+
+seekpool/src/generated/**
+!seekpool/src/generated/mod.rs
+!**/.keep

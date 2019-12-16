@@ -1,0 +1,193 @@
+use crate::types::Miner::Miner;
+
+pub fn first_page_data() -> Vec<Miner>{
+    let miner_arr = vec![
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+    ];
+    miner_arr
+}
+
+pub fn second_page_data() -> Vec<Miner>{
+    let miner_arr = vec![
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+
+    ];
+    miner_arr
+}
+
+pub fn third_page_data() -> Vec<Miner>{
+    let miner_arr = vec![
+
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+    ];
+    miner_arr
+}
+
+pub fn fourth_page_data() -> Vec<Miner>{
+    let miner_arr = vec![
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+    ];
+    miner_arr
+}
+
+pub fn fifth_page_data() -> Vec<Miner>{
+    let miner_arr = vec![
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+        Miner{
+            miner:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into(),
+            author:"0xcaaf10244e0f891a2c4f066f3d137914b47f1dce".into()
+        },
+    ];
+    miner_arr
+}
