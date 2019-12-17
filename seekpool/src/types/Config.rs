@@ -10,7 +10,8 @@ pub struct Config {
 pub struct Url {
     pub host: String,
     pub explorer : String,
-    pub rpc : String
+    pub rpc : String,
+    pub website : String
 }
 
 impl Config {

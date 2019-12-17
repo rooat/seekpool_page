@@ -285,6 +285,60 @@ pub fn view(model: &Model) -> impl View<Msg> {
                                     C.py_6,
                                 ],
                                 attrs! {
+                                    At::Href => "https://seekchain.org/",
+                                    At::Target => "_blank"
+                                },
+                                simple_ev(Ev::Click, Msg::ScrollToTop),
+                                simple_ev(Ev::Click, Msg::HideMenu),
+                                "Website"
+                            ]
+                        ],
+                        li![
+                            class![
+                                C.block,
+                                C.h_full,
+                                C.w_full,
+                                // sm__
+                                C.sm__hidden,
+                            ],
+                            a![
+                                class![
+                                    C.pl_8,
+                                    C.h_full,
+                                    C.flex,
+                                    C.items_center,
+                                    C.hover__text_yellow_7,
+                                    C.outline_none,
+                                    C.py_6,
+                                ],
+                                attrs! {
+                                    At::Href => model.config.url.explorer,
+                                    At::Target => "_blank"
+                                },
+                                simple_ev(Ev::Click, Msg::ScrollToTop),
+                                simple_ev(Ev::Click, Msg::HideMenu),
+                                "Explorer"
+                            ]
+                        ],
+                        li![
+                            class![
+                                C.block,
+                                C.h_full,
+                                C.w_full,
+                                // sm__
+                                C.sm__hidden,
+                            ],
+                            a![
+                                class![
+                                    C.pl_8,
+                                    C.h_full,
+                                    C.flex,
+                                    C.items_center,
+                                    C.hover__text_yellow_7,
+                                    C.outline_none,
+                                    C.py_6,
+                                ],
+                                attrs! {
                                     At::Href => Page::Support.to_href(),
                                     At::OnClick => "support()"
                                 },
@@ -337,30 +391,30 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         style!{
                             St::PaddingTop => "30px"
                         },
-                        li![
-                            class![
-                                // sm__
-                                C.sm__block,
-                                C.sm__ml_8,
-                                C.sm__h_full,
-                            ],
-                            a![
-
-                                attrs! {
-                                    At::Href => Page::Home.to_href(),
-                                    At::OnClick => "home()"
-                                },
-                                simple_ev(Ev::Click, Msg::ScrollToTop),
-                                simple_ev(Ev::Click, Msg::HideMenu),
-                                img![
-                                    attrs![
-                                        At::Src => image_src("favicon.png")
-                                    ]
-
-                                ]
-
-                            ],
-                        ],
+//                        li![
+//                            class![
+//                                // sm__
+//                                C.sm__block,
+//                                C.sm__ml_8,
+//                                C.sm__h_full,
+//                            ],
+//                            a![
+//
+//                                attrs! {
+//                                    At::Href => Page::Home.to_href(),
+//                                    At::OnClick => "home()"
+//                                },
+//                                simple_ev(Ev::Click, Msg::ScrollToTop),
+//                                simple_ev(Ev::Click, Msg::HideMenu),
+//                                img![
+//                                    attrs![
+//                                        At::Src => image_src("favicon.png")
+//                                    ]
+//
+//                                ]
+//
+//                            ],
+//                        ],
                         li![
                             class![
                                 // sm__
@@ -420,6 +474,7 @@ pub fn view(model: &Model) -> impl View<Msg> {
                                 "Home"
                             ]
                         ],
+
                         li![
                             style!{
                                     St::Color => "white"
@@ -477,6 +532,65 @@ pub fn view(model: &Model) -> impl View<Msg> {
                                 "Payments",
                             ]
                         ],
+
+                        li![
+                            style!{
+                                    St::Color => "white"
+                            },
+                            class![
+                                C.hidden,
+                                // md__
+                                C.md__block,
+                                C.md__ml_12,
+                                C.md__h_full,
+                            ],
+                            a![
+                                class![
+                                    // md__
+                                    C.md__h_full,
+                                    C.md__flex,
+                                    C.md__items_center,
+                                    C.md__hover__text_yellow_7,
+                                    C.sm__outline_none,
+                                ],
+                                attrs! {
+                                    At::Href => model.config.url.explorer,
+                                    At::Target => "_blank"
+                                },
+                                simple_ev(Ev::Click, Msg::ScrollToTop),
+                                simple_ev(Ev::Click, Msg::HideMenu),
+                                "Explorer",
+                            ]
+                        ],
+                        li![
+                            style!{
+                                    St::Color => "white"
+                            },
+                            class![
+                                C.hidden,
+                                // md__
+                                C.md__block,
+                                C.md__ml_8,
+                                C.md__h_full,
+                            ],
+                            a![
+                                class![
+                                    // md__
+                                    C.md__h_full,
+                                    C.md__flex,
+                                    C.md__items_center,
+                                    C.md__hover__text_yellow_7,
+                                    C.sm__outline_none,
+                                ],
+                                attrs! {
+                                    At::Href => model.config.url.website,
+                                    At::Target => "_blank"
+                                },
+                                simple_ev(Ev::Click, Msg::ScrollToTop),
+                                simple_ev(Ev::Click, Msg::HideMenu),
+                                "Website",
+                            ]
+                        ],
                         li![
                             style!{
                                     St::Color => "white"
@@ -504,7 +618,7 @@ pub fn view(model: &Model) -> impl View<Msg> {
                                 },
                                 simple_ev(Ev::Click, Msg::ScrollToTop),
                                 simple_ev(Ev::Click, Msg::HideMenu),
-                                "Support",
+                                "Help",
                             ]
                         ],
                     ],

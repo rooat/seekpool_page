@@ -2,3 +2,4 @@
 host = "http://106.13.216.136:8080"
 explorer = "http://explorer.seekchain.org"
 rpc = "http://13.251.6.203:8545"
+website = "https://seekchain.org"

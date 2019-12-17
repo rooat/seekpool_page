@@ -343,5 +343,5 @@ function minerChart(){
       ]
     }]
   };
-  jQuery("#chartContainer_home").CanvasJSChart(options);
+  $("#chartContainer_home").CanvasJSChart(options);
 }
