@@ -9,7 +9,8 @@ pub struct Config {
 #[derive(Debug,Deserialize,Serialize)]
 pub struct Url {
     pub host: String,
-    pub explorer : String
+    pub explorer : String,
+    pub rpc : String
 }
 
 impl Config {

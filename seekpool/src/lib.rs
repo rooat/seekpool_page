@@ -9,6 +9,7 @@ extern crate ethereum_types;
 #[macro_use]
 extern crate seed;
 extern crate web_sys;
+//extern crate web3;
 
 extern crate toml;
 use std::borrow::Cow;

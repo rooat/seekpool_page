@@ -55,7 +55,8 @@ pub fn view(model: &Model) -> impl View<Msg> {
             style!{
                 St::Border => "1px solid grey",
                 St::BorderRadius => "7px",
-                St::MarginTop => "120px"
+                St::MarginTop => "120px",
+                St::BorderRight => "hidden"
             },
             div![
                 class![
@@ -140,6 +141,9 @@ pub fn view(model: &Model) -> impl View<Msg> {
                         "当前区块高度"
                     ],
                     p![
+                        style!{
+                            St::FontSize => "40px"
+                        },
                         "23333"
                     ],
 

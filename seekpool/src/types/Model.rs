@@ -1,5 +1,5 @@
 use crate::{
-    Page,ScrollHistory,Url,test, Visibility,MinerDetail,NewRegister,ResState,Miner,PageSize,Config,is_in_prerendering
+    Page,ScrollHistory,Url,test,utils, Visibility,MinerDetail,NewRegister,ResState,Miner,PageSize,Config,is_in_prerendering
 };
 
 pub struct Model {
@@ -14,11 +14,16 @@ pub struct Model {
     pub res_state :ResState,
     pub miner_list :Vec<Miner>,
     pub page_size : PageSize,
-    pub config : Config
+    pub config : Config,
+//    pub blockNumber : String
 
 }
 impl Model {
     pub fn default(url :Url) -> Self{
+//        let bloNum = match utils::web3::getBlockNumber() {
+//            Ok(blo) => blo,
+//            Err(e) => "0".into()
+//        };
         Model {
             page: url.into(),
             scroll_history: ScrollHistory::new(),
@@ -31,7 +36,7 @@ impl Model {
             miner_list : test::fifth_page_data(),
             page_size : PageSize::default(),
             input_text : None,
-            config :Config::default()
+            config :Config::default(),
         }
     }
 }

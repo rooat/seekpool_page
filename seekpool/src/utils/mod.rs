@@ -1,3 +1,4 @@
+pub mod web3;
 use crate::{
     H160,Address,FromStr,toml,Cow,Future,Msg,Request,RequestBody,Method,REGIST_URL
 };

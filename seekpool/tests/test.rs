@@ -1,7 +1,12 @@
-extern crate wasm_bindgen_test;
-use wasm_bindgen_test::*;
+extern crate web3;
+use web3::futures::Future;
 
-#[wasm_bindgen_test]
-fn pass() {
-    assert_eq!(1, 1);
+#[test]
+fn test_web3() {
+    let (_eloop, transport) = web3::transports::Http::new("http://13.251.6.203:8545").unwrap();
+
+    let web3 = web3::Web3::new(transport);
+    let accounts = web3.eth().block_number().wait().unwrap();
+
+    println!("Accounts: {:?}", accounts);
 }
